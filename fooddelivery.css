@@ -1,0 +1,707 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+/* html {
+        scroll-padding-top: 4rem;
+      } */
+
+
+
+
+/* Navbar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+
+
+
+
+    /* whatever is a nice number that gets you past the header */
+
+
+
+
+
+
+}
+/* #searchbar_container{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 3px;
+} */
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+
+
+
+
+}
+
+#navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+
+
+}
+
+#navbar ul a {
+    display: block;
+    text-decoration: none;
+    margin: 0px 20px;
+    padding: 2px;
+    font-size: 1rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+    border-radius: 3px;
+
+
+
+
+
+
+}
+
+
+
+#navbar ul a:hover {
+    text-decoration: none;
+
+    margin: 0px 20px;
+    padding: 0px 2px;
+    font-size: 1rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: black;
+
+    background-color: white;
+
+    border-radius: 30px;
+    
+    
+
+
+}
+
+
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+   
+    min-width: 160px;
+    
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+  
+   
+    text-decoration: none;
+    display: block;
+  }
+  
+
+  
+  .dropdown:hover .dropdown-content {display: block;
+}
+
+
+
+
+
+
+
+/* logo */
+#logo img {
+    width: 32px;
+    height: auto;
+    margin: 0px;
+    margin-bottom: 0px;
+
+}
+
+#logo {
+    margin: 0px 1px;
+    padding: 0px 43px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Home */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 1px 179px;
+    align-items: center;
+    justify-content: center;
+    height: 680px;
+    position: relative;
+
+
+
+}
+
+#home::before {
+
+    content: "";
+    position: absolute;
+    background: url(img1.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    margin-top: -72px;
+
+}
+
+
+/* section services */
+#services {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 41px;
+    /* background:radial-gradient(rgb(232, 170, 170), rgba(101, 23, 9, 0.4), rgba(7, 6, 6, 1)); */
+    height: 495px;
+    position: relative;
+    flex-wrap: wrap;
+    /* margin-top: -200px; */
+   
+    /* scroll-margin-top: 5rem; */
+}
+
+.box {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    box-shadow: 10px 10px 5px #aaaaaa;
+    background-color: rgba(251, 170, 170, 0.67);
+    padding: 80px 28px;
+    padding-bottom: 2px;
+    margin: 10px 20px;
+    border-radius: 30px;
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+
+
+
+
+}
+
+/* .box:hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 8px 8px rgba(216, 87, 87, 0.5);
+    background-color: rgba(229, 51, 51, 0.47);
+    padding: 48px 108px;
+    margin: 0px 20px;
+    border-radius: 44px;
+    transform: scale3d(0.4);
+    transition: all 0.5s  ;
+    transition-delay: 1s; */
+
+
+
+
+
+
+/* .container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    width:100%;
+} */
+
+/* #box1::before{
+    content: "";
+    position: absolute;
+    background: url('pizza-6478478.jpg') center center/cover;
+    height: 495px;
+    width: 163%;
+    z-index: -1;
+    opacity: 0.99;
+    
+    
+    
+} */
+
+/* utility classes */
+
+.h-primary {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+    margin: 20px;
+    transform: skewX(20px);
+    transition: all 2s;
+
+
+}
+
+.h-secondory {
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+    justify-content: center;
+
+}
+
+button {
+    border-radius: 34px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+    margin: 22px;
+    padding: 1px 19px;
+    background-color: rgb(211, 132, 132, 0.5);
+}
+
+button:hover {
+    border-radius: 34px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+    margin: 22px;
+    padding: 1px 19px;
+    background-color: rgb(211, 132, 132, 0.8);
+    box-shadow: 5px 5px rgba(20, 18, 18, 0.7);
+    transform: scale(1.1);
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+
+}
+
+button:active {
+    border-radius: 34px;
+    font-size: 1.5rem;
+    text-align: center;
+
+    color: white;
+    margin: 22px;
+    padding: 1px 19px;
+    background-color: rgb(211, 132, 132, 0.8);
+    transform: scale(1);
+    box-shadow: none;
+    cursor: pointer;
+
+
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: black;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+    margin-bottom: 30px;
+    transform: rotate3d(360);
+    transition: all 2s;
+
+
+
+}
+
+h3 {
+    font-size: 2rem;
+    color: black;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+
+
+
+}
+
+.box p {
+    font-size: 1rem;
+
+
+}
+
+section {
+    scroll-margin-top: 40px;
+
+
+}
+
+#aboutush1 {
+    font: 300rem;
+}
+
+
+#contact-us div {
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+
+#contact-us {
+    display: flex;
+    padding: 4px 0px;
+
+    margin: 40px -50px;
+    background-color: #dbd3d3;
+    width:100%;
+    justify-content: space-between;
+    
+
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 120%;
+
+
+    justify-content: space-between;
+    /* background-color: black; */
+
+
+
+
+}
+
+/* #contact-us img {
+    border-radius: 50%;
+
+
+
+
+
+
+    margin: 0px 20px;
+    margin-top: 70px;
+
+    position: relative;
+    height: auto;
+
+
+
+
+    width: 15%;
+
+
+
+
+
+
+} */
+
+#contactdiv {
+
+    display: flex;
+    padding: 4px 0px;
+
+    margin: 40px -50px;
+    background-color: #f8f1f1;
+
+
+
+
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+    
+    justify-content: space-between;
+}
+
+#contactus {
+    display: flex;
+    justify-content: center;
+position: relative;
+    /*  */
+    
+  margin-top: 40px;
+  margin-bottom: 10px;
+    color: rgb(9, 14, 19);
+    font-size: 2.5rem;
+}
+
+
+/* contact */
+
+
+.card{
+    width:260px;
+     height:360px;
+     position: relative;
+     perspective: 1200px;
+     
+ }
+ 
+ .card:hover .card-front1{
+     transform:rotateY(-180deg);
+  }
+  .card:hover .card-front2{
+    transform:rotateY(-180deg);
+ }
+ .card:hover .card-front3{
+    transform:rotateY(-180deg);
+ }
+  .card:hover .card-back{
+     transform:rotateY(0deg);
+  }
+ 
+ .card-front1,.card-back{
+    width:100%;
+     height:100%;
+     border-radius:20px;
+     box-shadow:0 0 16px #858194;
+     position: absolute;
+     backface-visibility: hidden;
+     
+    
+     transition: transform 1s cubic-bezier(0.3,0.6,0.3,1.2);
+ } 
+
+ .card-front2,.card-back{
+    width:100%;
+     height:100%;
+     border-radius:20px;
+     box-shadow:0 0 16px #858194;
+     position: absolute;
+     backface-visibility: hidden;
+     
+    
+     transition: transform 1s cubic-bezier(0.3,0.6,0.3,1.2);
+ } 
+
+ .card-front3,.card-back{
+    width:100%;
+     height:100%;
+     border-radius:20px;
+     box-shadow:0 0 16px #858194;
+     position: absolute;
+     backface-visibility: hidden;
+     
+    
+     transition: transform 1s cubic-bezier(0.3,0.6,0.3,1.2);
+ } 
+ 
+  
+ .card-front1{
+     background:url("download.jpg")center center/cover no-repeat;
+     box-shadow: inset black 20px;
+    }
+ 
+    .card-front2{
+        background:url("sumit.jpg")center center/cover no-repeat;
+        box-shadow:  black ;
+        box-shadow: 10px;
+       }
+       .card-front3{
+        background:url("mandar.jpg")center center/cover no-repeat;
+       }
+    .card-back{
+     background:#fefffe;
+      color:#2d3047;
+     /* padding:2rem; */
+     display:flex;
+      flex-direction:column;
+     justify-content:space-evenly;
+      align-items:center;
+     text-align:center;
+     transform: rotateY(180deg);
+    }
+    
+    .profile-picture{
+        height:150px;
+       width:150px;
+        border-radius:50%;
+        padding:5px;
+        background:linear-gradient(135deg,#f9e988,#ed33b9);
+        background-position: center;
+       background-repeat: no-repeat;
+    }
+ 
+    .bio .name{
+     font-size:1.8rem;
+    }
+    .bio .title{
+     font-size:1.2rem;
+    }
+    .icons{
+     width:100%;
+     display:flex;
+     justify-content:space-evenly;
+    }
+    .icons .icon4{
+     background:linear-gradient(135deg,#f9e900, #ed33b9);
+     color:#fefffe;
+     width:38px;
+     height:38px;
+     display:grid;
+     place-items:center;
+     text-decoration:none;
+     border-radius:50%;
+    }
+    .icons .icon1{
+        background:linear-gradient(135deg,#f9e900, #ed33b9);
+        color:#fefffe;
+        width:38px;
+        height:38px;
+        display:grid;
+        place-items:center;
+        text-decoration:none;
+        border-radius:50%;
+       }
+       .icons .icon2{
+        background:linear-gradient(135deg,#f9e900, #ed33b9);
+        color:#fefffe;
+        width:38px;
+        height:38px;
+        display:grid;
+        place-items:center;
+        text-decoration:none;
+        border-radius:50%;
+       }
+       .icons .icon3{
+        background:linear-gradient(135deg,#f9e900, #ed33b9);
+        color:#fefffe;
+        width:38px;
+        height:38px;
+        display:grid;
+        place-items:center;
+        text-decoration:none;
+        border-radius:50%;
+       }
+    .icons .icon1:hover{
+        background:linear-gradient(135deg,#f9e900, #ed33b9);
+        color:rgb(25, 25, 250);
+        width:38px;
+        height:38px;
+        display:grid;
+        place-items:center;
+        text-decoration:none;
+        border-radius:50%;
+       }
+       
+       .icons .icon2:hover{
+           background:linear-gradient(135deg,#f9e900, #ed33b9);
+           color: #e91457;
+           width:38px;
+           height:38px;
+           display:grid;
+           place-items:center;
+           text-decoration:none;
+           border-radius:50%;
+          }
+          
+   
+          .icons .icon3:hover{
+           background:linear-gradient(135deg,#f9e900, #ed33b9);
+           color:rgb(75, 75, 248);
+           width:38px;
+           height:38px;
+           display:grid;
+           place-items:center;
+           text-decoration:none;
+           border-radius:50%;
+          }
+          .icons .icon4:hover{
+           background:linear-gradient(135deg,#f9e900, #ed33b9);
+           color:rgb(236, 16, 16);
+           width:38px;
+           height:38px;
+           display:grid;
+           place-items:center;
+           text-decoration:none;
+           border-radius:50%;
+          }
+          
+      
+    
+
+    .cardbody{
+        font-family:"Open Sans",sans-serif;
+        height:68vh;
+       display:grid;
+        place-items:center;
+        line-height:1.6;
+        justify-content: space-evenly;
+        margin:10px;
+        
+      }
+
+      
+      
+      
+      
+ #mandar{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          width: 100%;
+          flex-wrap: wrap;
+      } 
+#searchbar{
+    position: absolute;
+    right:10px;
+    display: flex;
+    
+  
+}
+#search{
+    filter: invert(1);
+    background: transparent;
+    
+   
+   
+    
+    border-radius: 34px;
+    position: relative;
+    flex-shrink:calc(10);
+    
+    width:300px;
+    padding-left: 30px;
+    text-decoration-color: firebrick;
+    
+}
+svg{
+    position: absolute;
+    padding: 3px 8px;
+    width: 15px;
+    height: auto;
+    align-items: flex-end;
+    filter: invert();
+    
+    
+    
+}
